@@ -1,0 +1,91 @@
+
+body {
+  height: 2000px;
+  background: linear-gradient(135deg, #3a6186, #89253e);
+}
+
+.container{
+  border: 10px solid black;
+  padding:  50px;
+  position: relative;
+}
+
+.image{
+  position: absolute;
+  top: -27px;
+  left: 10px;
+  
+}
+.image img{
+  width: 130px;
+}
+.head{
+    font-size: 40px;
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+    position: relative; 
+    display: inline-block; 
+}
+
+  .head::before {
+    content: "";
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(120deg, #a8ff78, #1a6ff8);
+    z-index: -1; 
+    transition: height 0.3s ease; 
+  }
+
+  .head:hover::before {
+    height: 70%; 
+  }
+
+.mark{
+    background: linear-gradient(120deg, #a8ff78, #1a6ff8);
+}
+
+.btn-submit{
+    width: 200px;
+    background: linear-gradient(120deg, #a8ff78, #1a6ff8);
+    font-size: 20px;
+    font-weight: 700;
+    transition: all 0.5s;
+    border: 0;
+}
+.btn-submit:hover{
+    background: linear-gradient(120deg, #fff, #fff); ;
+    border: 2px solid black;
+}
+.site-form i{
+    font-size: 21px;
+    color: #000;
+}
+
+.btn-visit{
+  border: 0;
+  width: 120px;
+  background-color: rgb(26, 211, 26);
+  border-radius: 5px;
+  color: #f8f2f2;
+  font-size: 17px;
+  transition: all 0.5s;
+}
+
+.btn-visit:hover,
+.btn-delete:hover{
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+}
+.btn-delete{
+  border: 0;
+  width: 120px;
+  background-color:rgb(247, 62, 29);
+  border-radius: 5px;
+  color: #f8f2f2;
+  font-size: 17px;
+  transition: all 0.5s;
+}
+
